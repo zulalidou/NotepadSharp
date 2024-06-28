@@ -1,3 +1,3 @@
 # NotepadSharp
 
-A free, light-weight, and useful/practical word processor.
+A free, light-weight, and practical text-editor.

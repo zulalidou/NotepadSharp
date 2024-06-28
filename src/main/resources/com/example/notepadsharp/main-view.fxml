@@ -2,15 +2,41 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.notepadsharp.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.BorderPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.notepadsharp.MainController">
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>
+
+    <top>
+        <HBox id="borderpane-top">
+            <Button text="File"/>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox>
+            <Label>Line 1</Label>
+            <Label>Line 2</Label>
+            <Label>Line 3</Label>
+        </VBox>
+    </left>
+
+
+
+    <center>
+        <TextArea>
+            Lorum ipsum
+        </TextArea>
+    </center>
+
+
+</BorderPane>
