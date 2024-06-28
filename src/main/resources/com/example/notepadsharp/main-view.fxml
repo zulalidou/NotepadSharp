@@ -11,15 +11,26 @@
 <?import java.net.URL?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.notepadsharp.MainController">
     <stylesheets>
         <URL value="@main.css" />
     </stylesheets>
 
+
     <top>
-        <HBox id="borderpane-top">
-            <Button text="File"/>
-        </HBox>
+<!--        <HBox id="borderpane-top">-->
+<!--            <Button text="File"/>-->
+<!--        </HBox>-->
+
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Close" onAction="#closeApp"/>
+            </Menu>
+        </MenuBar>
     </top>
 
     <left>
@@ -30,13 +41,9 @@
         </VBox>
     </left>
 
-
-
     <center>
         <TextArea>
             Lorum ipsum
         </TextArea>
     </center>
-
-
 </BorderPane>
